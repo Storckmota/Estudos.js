@@ -172,3 +172,175 @@ console.log(3 ** 3)
 let total = (2 + 5) * 6 
 console.log(total)
 
+// Operadores de comparação 
+
+// Ira comparar valore e retornar um Boolean como respota a comparacao 
+
+let one = 1 
+let two = 2 
+
+// =      let recebe 1 
+
+// ==       igual a 
+// console.log( two == 1)
+// console.log( one == "1")
+
+// !=      diferente de
+// console.log(one != two)
+// console.log(one != 1)
+// console.log(one != "1" 
+
+// ===    Estritamente igual a 
+// console.log(one === "1")
+// console.log(one === 1)
+
+// !==    Estritamente diferente de 
+// console.log(two !=== "2")
+// console.log(two !=== 2)
+
+// >  Maior que 
+// console.log(one > two)
+
+// >=  Maior igual a 
+// console.log(one >= 1)
+// console.log(two >= 1)
+
+// <   Menor que 
+// console.log(one < two)
+
+// <=  Menor igual a 
+// console.log(one <= two)
+// console.log(one <= 1)
+// console.log(oen <= 0)
+
+// Operadores de atribuicao (Assignment)
+let x 
+
+console.log(x)
+
+// assignment 
+// x = 1 
+
+// addition assignment 
+// x = x + 2 
+// x += 2 
+
+// subtracion assignment 
+// x = x - 1
+// x -= 1 
+
+// multiplication assignment 
+// x = x * 2 
+// x *= 2 
+
+// division assignment 
+// x = x / 2 
+// x /= 2 
+
+// Remaninder, Exponetiaion
+// x %= 2 
+// x **= 2
+
+// Operadores logicos (logical operators)
+
+// -2 valores booleanos, quando verificados,
+// resultara em verdadeiro ou falso 
+
+let pao = true 
+let queijo = true 
+
+// AND &&
+console.log(pao && queijo)
+
+// OR ||
+console.log(pao || queijo)
+
+// NOT !
+console.log(!pao)
+
+// Operador Condicional (ternario)
+
+// Dependendo da condicao, nos receberemos valores diferentes 
+
+// condicao entao valor 1 se nao valor 2 
+// condition ? value1 : value2 
+
+// Exemplos 
+// cafe da manha top
+let leite  = true 
+let nescau = true
+
+const niceBreakFast = leite && queijo ? // se tiver os dois && cafe top, se nao tiver os dois cafe ruim 
+'cafe top' : 'cafe da manha ruim'
+
+const niceBreakFast = leite || queijo ?
+'cafe top' : 'cafe da manha ruim'
+
+// Maior de 18 
+
+let age = 16 
+const canDrive = age >= 18 ? 'Can Drive' : "Can't Drive"
+
+// Operador de string (String operator)
+
+// comparison (comparacao)
+console.log('A' == "A")
+
+// concatenation (concatenacao)
+
+// Retorna a uniao de duas Strings 
+let alpha = 'alpha'
+console.log(alpha + 'bet' + 's')
+
+console.log(alpha += 'bet') // outro jeito de fazer 
+
+/* 
+    FALSY
+    Quando um valor e considerado false em contextos onde um booleano e obrigatorio (condicionais e loops)
+
+      false 
+      0
+      -0 
+      ""
+      null
+      undefined
+      NaN
+  
+*/
+
+  console.log( ? 'verdadeiro': 'falso')
+
+/* 
+ TRUTHY 
+ Quando um valor e considerado true em contextos onde um booleano e obrigatorio (condicionais e loops)
+ 
+   true 
+   {}
+   []
+   1 
+   3.23
+   "0"
+   "false"
+   -1 
+   Infinity 
+   -Infinity
+ 
+*/
+
+console.log( ? 'verdadeiro': 'falso')
+
+/* Operator precedence 
+   Precedencia de operadores 
+
+   * Grouping                                      ()
+   * Negacao e incremento                          ! ++ --
+   * Multiplicacao e divisao                       * /
+   * Adicao e subtracao                            + - 
+   * Relacional                                    < <= > >=c
+   * Igualdade                                     == != === !==
+   * AND                                           &&
+   * OR                                            ||
+   * Condicional                                   ?:
+   * Assignment (atribuicao)                       = += -= *= 
+
+*/
