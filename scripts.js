@@ -344,3 +344,111 @@ console.log( ? 'verdadeiro': 'falso')
    * Assignment (atribuicao)                       = += -= *= 
 
 */
+
+// iff ... eslse 
+
+let temperatura = 36.5
+
+if(temperatura >= 37){
+   console.log('Febre')
+} else {
+   console.log('Saudavel')
+}
+
+// switch 
+
+function calculate(number1, operator, number2){
+   let result
+   
+   switch(operator){
+      case '+':
+         result = number1 + number2
+         break
+      case '-':
+         result = number1 - number2
+         break
+      case '*':
+         result = number1 * number2
+         break 
+      case '/':
+         result = number1 / number2
+         break 
+      default:
+         console.log('nao implementado')
+         break         
+      
+}
+
+   return result
+}
+
+console.log(calculate(4, '*', 8))
+     
+
+// Throw 
+ function sayMyName(name = ''){
+   if (name === ''){
+      throw 'Nome e obrigatorio'
+   }
+   
+   console.log('depois do erro') // nao ira aparecer no console pois o throw "parou a function"
+ }
+
+
+// Try... catch 
+  try {
+   sayMyName()
+
+} catch(e){
+   console.log(e)
+}
+
+console.log('apos a funcao de erro')
+
+// Estrutura de Repeticao 
+// for 
+// break - para a execucao do loop 
+// continue - pula a execucao do momento 
+
+for(let i = 0; i < 10; i++){
+   console.log(i)
+}
+
+
+// Estrutura de Repeticao 
+// while
+
+let i = 233455647859648;
+
+while(i < 10){
+   console.log(i)
+
+   i /=  35;
+}
+
+// for... of
+  
+let name = 'Julio'
+let names = ['Mayk', 'Joao', 'Pedro']
+
+for(let char of name){
+   console.log(char)
+}
+
+for(let name of names){
+   console.log(name)
+}
+
+// for... in 
+
+let person = {
+   name: 'Jhon',
+   age: 30,
+   weight: 88
+}
+
+for(let property in person){
+   console.log(property)
+}
+                     
+
